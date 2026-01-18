@@ -1,0 +1,17 @@
+[package]
+name = "swallow"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+secp256k1 = { version = "0.28", features = ["rand", "hashes"] }
+
+# HMAC + SHA-512 (BIP32 derivace)
+hmac = "0.12"
+sha2 = "0.10"
+
+# Náhodná data (seed)
+rand = "0.8"
+
+# Chyby
+anyhow = "1"
